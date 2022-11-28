@@ -62,8 +62,8 @@ function EnterAndEnterBack(city_el, city_no, isDesktop) {
   $(".activecity").removeClass("activecity");
   $(city_el).addClass("activecity");
 
-  $(".city-container > div .circle-black").css("background", "#0F0");
-  $(".city-container > div.activecity .circle-black").css("background", "#000");
+  //$(".city-container > div .circle-black").css("background", "#0F0");
+  //$(".city-container > div.activecity .circle-black").css("background", "#000");
 
   if ($(city_el).next().hasClass("footer-section")) {
     $(".next-button h6").text("FØRSTE STOP");
