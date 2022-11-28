@@ -1,0 +1,70 @@
+/* Wizardry Fluid Settings */
+body {
+  min-height: 0vw;
+  font-size: calc(0.3232758620689655vw + 0.6120689655172413em);
+}
+/* Min Font Size */
+@media screen and (max-width: 991px) {
+  body {
+    font-size: 0.8125em;
+  }
+}
+/* Desktop Only CSS (i.e. hover states) */
+@media only screen and (min-width: 992px) {
+}
+/* Main Variables */
+:root {
+  --main-dark: black;
+  --main-light: white;
+}
+/* Global Styles */
+::selection {
+  background: var(--main-dark);
+  color: var(--main-light);
+  text-shadow: none;
+}
+img::selection,
+svg::selection {
+  background: transparent;
+}
+/* Link color inherits from parent font color  */
+a {
+  color: inherit;
+}
+/* Disable / enable clicking on an element and its children  */
+.no-click {
+  pointer-events: none;
+}
+.can-click {
+  pointer-events: auto;
+}
+/* Target any element with a certain "word" in the class name  */
+[class*="spacer"] {
+}
+/* Remove white space vertical on fonts  */
+.text-size-h2::before {
+  content: "";
+  margin-bottom: -0.38em;
+  display: table;
+}
+.text-size-h2::after {
+  content: "";
+  margin-top: -0.2em;
+  display: table;
+}
+.text-size-h3::before,
+.text-size-h4::before,
+.text-size-h5::before,
+.text-size-h6::before {
+  content: "";
+  margin-bottom: -0.375em;
+  display: table;
+}
+.text-size-h3::after,
+.text-size-h4::after,
+.text-size-h5::after,
+.text-size-h6::after {
+  content: "";
+  margin-top: -0.215em;
+  display: table;
+}
